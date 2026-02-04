@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Hockney | The Museum of Modern Art</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;700&family=Georgia:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER / NAVIGATION -->
+    <header class="header" role="banner">
+        <div class="header-top">
+            <div class="header-container">
+                <a href="#home" class="logo" aria-label="David Hockney - The Museum of Modern Art">
+                    <span class="logo-main">The Museum</span>
+                    <span class="logo-sub">of Modern Art</span>
+                </a>
+                <nav class="navbar" role="navigation" aria-label="Main navigation">
+                    <ul class="nav-menu">
+                        <li><a href="#home" class="nav-link">Exhibitions</a></li>
+                        <li><a href="#artist" class="nav-link">Artist Profile</a></li>
+                        <li><a href="#works" class="nav-link">Works</a></li>
+                        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                        <li><a href="#pop-art" class="nav-link">Learn</a></li>
+                        <li><a href="#credits" class="nav-link">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header-divider"></div>
+    </header>
+
+    <!-- HERO SECTION WITH IMAGE CAROUSEL -->
+    <section id="home" class="hero" role="region" aria-label="Hero section">
+        <audio id="hero-audio" autoplay muted>
+            <source src="videoplayback.mp4" type="audio/mp4">
+            Your browser does not support the audio element.
+        </audio>
+        <video id="hero-video" class="hero-video" controls loop muted playsinline>
+            <source src="videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+        <button id="audio-toggle" class="audio-toggle" aria-label="Toggle audio" title="Click to enable audio">
+            <span class="audio-icon">🔇</span>
+        </button>
+        <div class="carousel-hero">
+            <div class="carousel-slide active" style="background-image: url('polaroid.jpg')"></div>
+            <div class="carousel-slide" style="background-image: url('foto 2.jpg')"></div>
+            <div class="carousel-slide" style="background-image: url('foto 3.jpg')"></div>
+        </div>
+        <div class="hero-overlay">
+                <div class="hero-content">
+                <h1 class="hero-title">David Hockney</h1>
+                <p class="hero-subtitle">Figura clave del Pop Art británico y pintura contemporánea</p>
+                <p class="hero-description">Nacido 1937</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="artist" class="about" role="region" aria-label="About the artist">
+        <div class="container">
+                <div class="about-header">
+                <h2>Artist Profile</h2>
+                <p class="about-intro">David Hockney (n. 9 de julio de 1937, Bradford, Inglaterra) es un artista británico, figura central del Pop Art y reconocido por sus retratos, paisajes y la experimentación con fotografía y medios digitales.</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Early Life & Education</h3>
+                    <p>Nacido en Bradford, Hockney estudió en la Bradford School of Art y posteriormente en el Royal College of Art en Londres, donde se graduó en 1962. Desde temprano mostró interés por la representación pictórica y el color.</p>
+                    
+                    <h3>Pop Art and Career</h3>
+                    <p>Hockney emergió en la escena artística de los años 60 como una voz distintiva del Pop Art británico. Sus composiciones, retratos y escenas de piscina (entre ellas <em>A Bigger Splash</em>) consolidaron su reputación internacional.</p>
+                    
+                    <h3>Legacy</h3>
+                    <p>Su obra abarca pintura, dibujo, fotografía y trabajos digitales; Hockney ha experimentado con nuevas herramientas (incluyendo el iPad) y su enfoque en la percepción y el paisaje ha influido en generaciones de artistas contemporáneos.</p>
+                </div>
+                
+                <aside class="about-sidebar">
+                    <div class="info-block">
+                        <h4>Birth</h4>
+                        <p>9 de julio de 1937<br>Bradford, Inglaterra</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>Notable Works</h4>
+                        <p>A Bigger Splash (1967)<br>Mr and Mrs Clark and Percy (1970–71)</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>Education</h4>
+                        <p>Bradford School of Art<br>Royal College of Art, Londres</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>Movement</h4>
+                        <p>Pop Art<br>Pintura contemporánea</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED CAROUSEL BAND -->
+    <section class="carousel-section" role="region" aria-label="Featured works carousel">
+        <div class="carousel-container">
+            <h2 class="carousel-title">Exhibitions</h2>
+            <div class="horizontal-carousel">
+                <div class="carousel-track">
+                    <div class="carousel-item" style="background-image: url('polaroid.jpg')">
+                        <div class="carousel-caption">
+                            <h4>A Bigger Splash</h4>
+                            <p>1967</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('foto 2.jpg')">
+                        <div class="carousel-caption">
+                            <h4>Mr and Mrs Clark and Percy</h4>
+                            <p>1970–71</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('foto 3.jpg')">
+                        <div class="carousel-caption">
+                            <h4>Portrait of an Artist (Pool with Two Figures)</h4>
+                            <p>1972</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('foto 4.jpg')">
+                        <div class="carousel-caption">
+                            <h4>The Blue Guitar</h4>
+                            <p>1977</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('foto 5.jpg')">
+                        <div class="carousel-caption">
+                            <h4>Garrowby Hill</h4>
+                            <p>1998</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('foto 6.webp')">
+                        <div class="carousel-caption">
+                            <h4>Bigger Trees Near Warter</h4>
+                            <p>2007</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous slide">←</button>
+            <button class="carousel-btn carousel-next" aria-label="Next slide">→</button>
+        </div>
+    </section>
+    <!-- POP ART MOVEMENT SECTION -->
+    <section id="pop-art" class="movement" role="region" aria-label="Pop Art movement overview">
+        <div class="container">
+                <div class="movement-header">
+                <h2>Pop Art: A Cultural Revolution</h2>
+                <p class="movement-intro">The Pop Art movement emerged in the 1950s and 1960s, fundamentally transforming the relationship between fine art and popular culture. Artists like David Hockney championed this shift while also expanding the medium with portraiture and landscape.</p>
+            </div>
+            
+            <div class="movement-grid">
+                <article class="movement-item">
+                    <h3>Visual Language</h3>
+                    <p>Bright colors, repeated imagery, commercial aesthetics, and mass production techniques define Pop Art's distinctive visual vocabulary.</p>
+                </article>
+                <article class="movement-item">
+                    <h3>Key Artists</h3>
+                    <p>Andy Warhol, Roy Lichtenstein, David Hockney, James Rosenquist, and others shaped the movement's trajectory and global influence.</p>
+                </article>
+                <article class="movement-item">
+                    <h3>Artistic Methods</h3>
+                    <p>Collage, silkscreen printing, mixed media, and commercial techniques allowed artists to engage directly with consumer culture.</p>
+                </article>
+                <article class="movement-item">
+                    <h3>Cultural Impact</h3>
+                    <p>Pop Art fundamentally transformed contemporary visual culture, influencing design, advertising, and fine art practices globally.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+                    <!-- Duplicate movement items removed -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SELECTED WORKS SECTION -->
+    <section id="works" class="works" role="region" aria-label="Selected major works">
+        <div class="container">
+            <div class="works-header">
+                <h2>Major Works</h2>
+                <p class="works-intro">Una selección de obras emblemáticas de David Hockney, explorando retrato, paisaje, color y experimentación técnica.</p>
+            </div>
+            
+            <div class="works-grid">
+                <article class="work-item">
+                    <h3>A Bigger Splash</h3>
+                    <p class="work-year">1967</p>
+                    <p>Una de las pinturas más icónicas de Hockney, que captura la luz y la sensación del espacio de la piscina con una paleta vibrante.</p>
+                </article>
+                <article class="work-item">
+                    <h3>Mr and Mrs Clark and Percy</h3>
+                    <p class="work-year">1970–71</p>
+                    <p>Un retrato doble que examina la intimidad, el estilo y la representación social a través de un lenguaje pictórico claro y detallado.</p>
+                </article>
+                <article class="work-item">
+                    <h3>Portrait of an Artist (Pool with Two Figures)</h3>
+                    <p class="work-year">1972</p>
+                    <p>Un ejemplo poderoso de su interés por la figura humana y el paisaje: una composición que combina narrativa y estudio formal.</p>
+                </article>
+                <article class="work-item">
+                    <h3>My Marilyn</h3>
+                    <p class="work-year">1965</p>
+                    <p>A meditation on celebrity culture and the mass reproduction of iconic imagery in modern society, engaging directly with Warhol's approach while maintaining distinct artistic vision.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery" role="region" aria-label="Complete gallery of works">
+        <div class="container">
+            <div class="gallery-header">
+                <h2>Complete Gallery</h2>
+                <p class="gallery-intro">Explore the full range of David Hockney's artistic practice, from retratos y paisajes a trabajos fotográficos y digitales.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img src="polaroid.jpg" alt="A Bigger Splash by David Hockney" class="gallery-image">
+                    <figcaption>
+                        <h3>A Bigger Splash</h3>
+                        <p>1967</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="foto 2.jpg" alt="Mr and Mrs Clark and Percy by David Hockney" class="gallery-image">
+                    <figcaption>
+                        <h3>Mr and Mrs Clark and Percy</h3>
+                        <p>1970–71</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="foto 3.jpg" alt="Portrait (Pool) by David Hockney" class="gallery-image">
+                    <figcaption>
+                        <h3>Portrait of an Artist (Pool with Two Figures)</h3>
+                        <p>1972</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="foto 4.jpg" alt="The Blue Guitar by David Hockney" class="gallery-image">
+                    <figcaption>
+                        <h3>The Blue Guitar</h3>
+                        <p>1977</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="foto 5.jpg" alt="Garrowby Hill by David Hockney" class="gallery-image">
+                    <figcaption>
+                        <h3>Garrowby Hill</h3>
+                        <p>1998</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="foto 6.webp" alt="Bigger Trees Near Warter by David Hockney" class="gallery-image">
+                    <figcaption>
+                        <h3>Bigger Trees Near Warter</h3>
+                        <p>2007</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="credits" class="about-moma" role="region" aria-label="About this exhibition">
+        <div class="container">
+            <div class="about-grid">
+                <section class="about-block">
+                    <h3>The Artist</h3>
+                    <p>David Hockney (n. 1937) es un artista británico cuya carrera abarca pintura, dibujo, fotografía y trabajos digitales. Su obra ha sido exhibida internacionalmente y está presente en las colecciones de los principales museos del mundo.</p>
+                </section>
+                <section class="about-block">
+                    <h3>Related Resources</h3>
+                    <ul class="resource-list">
+                        <li><a href="#">The Pop Art Movement</a></li>
+                        <li><a href="#">MoMA Collection</a></li>
+                        <li><a href="#">Artist Documentation</a></li>
+                        <li><a href="#">Educational Materials</a></li>
+                    </ul>
+                </section>
+                <section class="about-block">
+                    <h3>Further Reading</h3>
+                    <ul class="resource-list">
+                        <li><a href="#">David Hockney: The Complete Works</a></li>
+                        <li><a href="#">Pop Art: A History</a></li>
+                        <li><a href="#">British Modern Art</a></li>
+                        <li><a href="#">Contemporary Perspectives</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo" aria-label="Page footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p class="footer-copyright">&copy; The Museum of Modern Art. David Hockney Archive.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
